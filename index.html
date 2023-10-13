@@ -7,24 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Pets</title>
 </head>
 <body>
-    <a href="#main" id = "jump">Skip to Main Content</a>
+    <a href="#main" id = "skip">Skip to Main Content</a>
     <nav>
         <ul>
-            <li><a href="index.html">Home/Pets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="travel.html">Travel</a></li>
+            <li class="pets-link"><a href="index.html">Home/Pets</a></li>
+            <li class="recipe-link"><a href="recipes.html">Recipes</a></li>
+            <li class="travel-link"><a href="travel.html">Travel</a></li>
         </ul>
     </nav>
-
+ 
     <main id = "main"> 
         <h1>Pets</h1>
         <div>
             <h2>Terry</h2>
-            <img src="images/terry.jpg" alt="Russian Turtle walking in grass" width="400" height="">
+            <div class="intro-pic">
+            <img src="images/terry.jpg" alt="Russian Turtle walking in grass" width="500" height="">
+            </div>
+
+            <div class="intro">
             <p>Terry is three years old. He spends his days sitting in the sun and eating. 
                 Among his favorite foods are dark, leafy greens, strawberries, and watermelon.
                 He also appreciates extra calcium sprinkled on his meals to make his shell big and strong. 
@@ -34,13 +38,19 @@
                 sassy side to his personality especially when it comes to his food. Terry is a smart 
                 tortoise who can do a few tricks such as hiding in his shell or going for a swim in 
                 shallow water. </p>
+             </div>   
+
             <h3>Photo Gallery</h3>
-            <img src="images/terry_eating.jpg" alt="Russian Tortoise eating lettuce" width="200" height="">
-            <img src="images/terry_sunbathing.jpg" alt="Russian tortoise basking in the sun" width="200" height="">
-            <img src="images/terry_swimming.jpeg" alt="Russian tortoise sitting in small pool of shallow water" width="200" height="">
-            <img src="images/terry_playing.jpg" alt="Russian tortoise crawling in sunny grass field" width="200" height="">
+
+            <div class="pets-gallery">
+            <img class="pet-pic" src="images/terry_eating.jpg" alt="Russian Tortoise eating lettuce" width="" height="">
+            <img class="pet-pic" src="images/terry_sunbathing.jpg" alt="Russian tortoise basking in the sun" width="" height="">
+            <img class="pet-pic" src="images/terry_swimming.jpeg" alt="Russian tortoise sitting in small pool of shallow water" width="" height="">
+            <img class="pet-pic" src="images/terry_playing.jpg" alt="Russian tortoise crawling in sunny grass field" width="" height="">
+            </div>
+
             <h3>Likes</h3>
-            <ul>
+            <ul class="likes-list">
             <li>Warm sun</li>
             <li>Large grass fields</li>
             <li>Watermelon</li>
@@ -50,7 +60,12 @@
 
         <div>
             <h2>Rocky</h2>
-            <img src="images/rocky.jpg" alt="Black and grey cat laying on couch in sunlight" width="400" height="">
+
+            <div class="intro-pic">
+            <img src="images/rocky.jpg" alt="Black and grey cat laying on couch in sunlight" width="500" height="">
+            </div>
+
+            <div class="intro">
             <p>Rocky is a young kitten that stays inside and cuddles with his owner all day. His favorite place is hang 
                 out is on the left side of the couch with his red blanket. When he's not laying down and sleeping, he's eating 
                 favorite snacks such as catnip and dirt. He also appreciates bellyrubs and head scratches, especially on Saturdays
@@ -59,12 +74,19 @@
                 distracting his owners from doing their homework. He loves knocking things off of high surfaces and can't stand when 
                 things are where they're supposed to be. His owners thinks he's too cute to be yelled at so they usually let him get away
                 with these things which is probably why he keeps doing it. </p>
+            </div>
+
             <h3>Photo Gallery</h3>
-            <img src="images/rocky_treats.jpg" alt="Black and grey cat sticking entire head in jar of treats" width="200" height="">
-            <img src="images/rocky_bird_watching.jpg" alt="Black and grey cat staring out window at birds" width="200" height="">
-            <img src="images/rocky_hand.jpg" alt="Black and grey cat placing paw on human hand" width="200" height="">
-            <img src="images/rocky_sleeping.jpg" alt="Black and grey cat curled up sleeping on pink blanket" width="200" height="">
-            <ul>
+
+            <div class="pets-gallery">
+            <img class="pet-pic" src="images/rocky_treats.jpg" alt="Black and grey cat sticking entire head in jar of treats" width="" height="">
+            <img class="pet-pic" src="images/rocky_bird_watching.jpg" alt="Black and grey cat staring out window at birds" width="" height="">
+            <img class="pet-pic" src="images/rocky_hand.jpg" alt="Black and grey cat placing paw on human hand" width="" height="">
+            <img class="pet-pic" src="images/rocky_sleeping.jpg" alt="Black and grey cat curled up sleeping on pink blanket" width="" height="">
+            </div>
+
+            <h3>Likes</h3>
+            <ul class="likes-list">
                 <li>Fuzzy Blankets</li>
                 <li>Birds</li>
                 <li>Treats</li>
@@ -74,25 +96,35 @@
 
         <div> 
             <h2>Bacon Q Dog</h2>
-            <img src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
 
+            <div class="intro-pic">
+            <img src="images/bacon.jpg" width = "500" alt="Brown labradoodle wearing colorful lei">
+            </div>
+
+            <div class="intro">
             <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his 
                 family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of 
                 the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
             <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place 
                 his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. 
                 Lots and lots of rolling.</P>
+            </div> 
+            
             <h3>Photo Gallery</h3>
-            <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
-            <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
-            <video width="200"  controls>
+
+            <div class="pets-gallery">
+            <img class="pet-pic" src="images/bacon_bandana.JPG" width ="" alt = "Brown labradoodle wearing an orange bandana">
+            <img class="pet-pic" src="images/bacon_graduation.JPG"  width ="" alt="Small labradoodle puppy wearing a graduation cap and gown">
+            <video class="pet-pic" width=""  controls>
                 <source src="images/bacon_agility.mov">
                 Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
             </video>
-            <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            <!-- DON'T KNOW WHAT TO DO WITH THIS VIDEO -->
+            <img class="pet-pic"src="images/bacon_halloween.JPG"  width ="" alt="Brown labradoodle wearing a pirate costume">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="likes-list">
                 <li>Belly rubs</li>
                 <li>Playing tug-of-war</li>
                 <li>Sneaking onto the couch</li>
@@ -100,52 +132,71 @@
             <!-- Colleen Van Lent -->
         </div>
 
-        <div><h2 class="subheading">Milktea</h2>
-            <p class="Paragraph"> Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything 
+        <div>
+            <h2>Milktea</h2>
+
+            <div class="intro-pic">
+                <img src="images/Milktea.jpg" width = "500" alt="Brown labradoodle wearing colorful lei">
+                </div>
+            
+            <div class="intro">
+            <p> Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything 
                 dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what
                  she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. 
                  I want to see the manager.”</p><br>
-            <p class="Paragraph"> Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. 
+            <p> Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. 
                 I highly advise against keeping a Scottish fold because they are in constant pain when they reach around 2 years old. Cartilage accumulates
                  around her paw joints and tail joints and it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding 
                  animals to look pretty while sacrificing the animals’ health.</p>
-            <h3 class="subheading">Photo Gallery</h3>
+            </div>
+
+            <h3>Photo Gallery</h3>
             
-            <img src="images/Main.JPG" alt="Milktea taking nap" class="image">
-            
-            
-            <img src="images/Milktea_comfy.jpg" width="200" alt="Milktea enjoying a good massage" class = "image">
-            <img src="images/Milktea_catbox.JPG" width="200" alt="Milktea Catbox position" class = "image">
-            <img src="images/Milktea_laptop.JPG" width="200" alt="Baby Milktea On Laptop" class = "image">
-            <img src="images/Milktea_mirror.jpeg" width="200" alt="Milktea sighing at mirror" class = "image">
+            <div class="pets-gallery">
+            <img class="pet-pic" src="images/Main.JPG" width="" alt="Milktea taking nap" class="image">
+            <img class="pet-pic" src="images/Milktea_comfy.jpg" width="" alt="Milktea enjoying a good massage" class = "image">
+            <img class="pet-pic" src="images/Milktea_catbox.JPG" width="" alt="Milktea Catbox position" class = "image">
+            <img class="pet-pic" src="images/Milktea_laptop.JPG" width="" alt="Baby Milktea On Laptop" class = "image">
+            <img class="pet-pic" src="images/Milktea_mirror.jpeg" width="" alt="Milktea sighing at mirror" class = "image">
+            </div>
             
             <div class="Likes">
-            <h3 class="subheading">Likes</h3>
+            <h3>Likes</h3>
             
-            <ul class="like_list">
-            <li>She loves individual corn kernels served on human hands</li>
-            <li>  She enjoys sitting royally on suitcases to claim ownership of her humans</li>
-            <li>She prefers to be alone and sit on soft surfaces in her free time</li>
-            <!--Olive Ren-->
+            <ul class="likes-list">
+            <li>Corn kernels served on human hands</li>
+            <li>Sitting royally on suitcases</li>
+            <li>Be alone and sit on soft surfaces</li>
             </ul>
+            <!--Olive Ren-->
         </div>
         <div>
             <h2>Cheeto (Chicken)</h2>
             
-            <img width="400" src="images/cheeto_cattree.jpg" alt="Orange cat hanging paws off a cat tower">
+            <div class="intro-pic">
+            <img width="500" src="images/cheeto_cattree.jpg" alt="Orange cat hanging paws off a cat tower">
+            </div>
+
+            <div class="intro">
             <p>Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get
             outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping</p>
             <p>Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie
             chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years
             old and still acts like a younger cat, despite being middle-aged</p>
+            </div>  
+
             <h3>Photo Gallery</h3>
-            <img width="200" src="images/cheeto_carpet.jpg" alt="Cheeto laying sideways on the carpet">
-            <img width="200" src="images/cheeto_moon.jpg" alt="Cheeto lying in the sun in a half moon crescent shape">
-            <img width="200" src="images/cheeto_boxes.jpg" alt="Cheeto lying on boxes with one leg hanging off.">
-            <img width="200" src="images/cheeto_attack.jpg" alt="Cheeto attacking a hand trying to pet him.">
-            
+
+            <div class="pets-gallery">
+            <img class="pet-pic" width="" src="images/cheeto_carpet.jpg" alt="Cheeto laying sideways on the carpet">
+            <img class="pet-pic" width="" src="images/cheeto_moon.jpg" alt="Cheeto lying in the sun in a half moon crescent shape">
+            <img class="pet-pic" width="" src="images/cheeto_boxes.jpg" alt="Cheeto lying on boxes with one leg hanging off.">
+            <img class="pet-pic" width="" src="images/cheeto_attack.jpg" alt="Cheeto attacking a hand trying to pet him.">
+            </div>
+
             <h3>Likes</h3>
-            <ul>
+
+            <ul class="likes-list">
                 <li>Treats</li>
                 <li>Exploring</li>
                 <li>My Dad</li>
@@ -155,22 +206,31 @@
         </div>
         <div>
             <h2>Jax</h2>
-            
-            <img width="400" src="images/Jax.jpg" alt="A black and white kitten sitting down and wearing a yellow collar.">
+            <div class="intro-pic">
+            <img width="500" src="images/Jax.jpg" alt="A black and white kitten sitting down and wearing a yellow collar.">
+            </div>
+
+            <div class="intro">
             <p>Jax is a kitten, about five months old that I found this summer at a gas station while traveling to Marquette, Michigan.
             He was scared and malnourished, crying in the parking lot. I took him with me and after some healthy meals and a trip to
             the vet he is doing great!</p>
             <p>My roommates and I just recently moved and Jax has been having a hard time getting used to the large house since we were
             previously living in a small apartment. Jax is incredibly playful and loves to run around, but when he is sleepy he is
             happy to be held</p>
+            </div>
+
             <h3>Photo Gallery</h3>
-            <img width="200" src="images/JaxandMax.jpg" alt="Black and white kitten standing on the driver’s arm while on a road trip.">
-            <img width="200" src="images/JaxHarlowLake.jpg" alt="Black and white kitten on a leash standing on a rock above a lake.">
-            <img width="200" src="images/JaxSleeping.jpg" alt="Black and white kitten sleeping on a windowsill.">
-            <img width="200" src="images/JaxDashboard.jpg" alt="Black and white kitten lying on the dashboard of a car while crossing the Mackinac Bridge">
-            
+
+            <div class="pets-gallery">
+            <img class="pet-pic" width="" src="images/JaxandMax.jpg" alt="Black and white kitten standing on the driver’s arm while on a road trip.">
+            <img class="pet-pic" width="" src="images/JaxHarlowLake.jpg" alt="Black and white kitten on a leash standing on a rock above a lake.">
+            <img class="pet-pic" width="" src="images/JaxSleeping.jpg" alt="Black and white kitten sleeping on a windowsill.">
+            <img class="pet-pic" width="" src="images/JaxDashboard.jpg" alt="Black and white kitten lying on the dashboard of a car while crossing the Mackinac Bridge">
+            </div>
+
             <h3>Likes</h3>
-            <ul>
+
+            <ul class="likes-list">
                 <li>Toys</li>
                 <li>Going outside</li>
                 <li>Attention</li>
@@ -180,17 +240,28 @@
         </div>
         <div>
             <h2>Luna</h2>
-            <img width="400" src="images/luna.PNG" alt="Mini German shepherd sunbathing">
+
+            <div class="intro-pic">
+            <img width="500" src="images/luna.PNG" alt="Mini German shepherd sunbathing">
+            </div>
+
+            <div class="intro">
             <p>Luna is a German shepherd mix and a fireball of energy. Oftentimes, destroying anything in her path she will take and hide 
                 all your socks, shoes, and clothes for her to chew on. She loves playing catch at the park, it always gives her the zoomies.</p> 
             <p>Luna is a very jealous, loving, and protective dog. She really embraces her inner chihuahua and will bark at any stranger, car, 
                 or noise at night. She makes the perfect guard dog. But she is not at all aggressive. Luna is all bark no bite!</p>
+            </div>
 
             <h3>Photo Gallery</h3>
-            <img width="200" src="images/luna_puppy.PNG" alt="Luna as a puppy">
-            <img width="200" src="images/luna_friends.PNG" alt="Luna, Lobi, Laith">
-            <img width="200" src="images/luna_evil.PNG" alt="Luna death stare">
-            <ul>
+
+            <div class="pets-gallery">
+            <img class="pet-pic" width="" src="images/luna_puppy.PNG" alt="Luna as a puppy">
+            <img class="pet-pic" width="" src="images/luna_friends.PNG" alt="Luna, Lobi, Laith">
+            <img class="pet-pic" width="" src="images/luna_evil.PNG" alt="Luna death stare">
+            </div>
+
+            <h3>Likes</h3>
+            <ul class="likes-list">
                 <li>Chicken</li>
                 <li>Park</li>
                 <li>Belly Rubs</li>
@@ -199,5 +270,6 @@
             <!-- Jahaira Flores -->
         </div>
     </main>
+    <button class="style1">Back to Top</button>
 </body>
 </html>
