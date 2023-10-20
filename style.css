@@ -1,0 +1,243 @@
+/* @media only screen and (max-width: 768px) */
+/* do I need to include this? */
+
+#static{
+    display: none;
+}
+
+#gif{
+    display: block;
+    margin: auto;
+}
+
+body{
+    background-color:#f8b8d0;
+    color: #AA336A;
+}
+
+h1{
+    font-size: 50px;
+    text-shadow: 2px 2px #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{
+    background-color: #AD3F60;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FF69B4;
+    color: #000000; 
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+p{
+    line-height: 150%;
+    margin: 10px;
+}
+
+.intro, .intro-pic{
+    border: 5px solid #000000;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    min-width: 90%;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.intro-pic img, .intro p{
+    grid-column: 1/-1;
+    border-radius: 20px;
+}
+
+.intro a{
+    text-decoration: underline;
+}
+
+.pets-gallery, .food-gallery, .travel-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid #000000;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    text-align: center;
+}
+
+.pet-pic, .food-pic, .travel-pic{
+    grid-column: 1/-1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.travel-pic video{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.travel-pic img{
+    border-radius: 10px;
+}
+
+.travel-gallery video, .pets-gallery video{
+    display:block;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+.likes-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.likes-list > li{
+    grid-column: 1/-1;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+} 
+
+span {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #732A40;
+    color: #FFFFFF;
+}
+
+.ingredients, .steps{
+    margin: 20px;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.ingredients li {
+    list-style: circle;
+    padding: 2px;
+}
+
+.steps li{
+    list-style-type: decimal;
+    padding: 2px;
+}
+
+nav{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-evenly;
+    justify-items: center;
+    background-color: #e00b6f;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid #AA336A;
+}
+
+nav a{
+    background-color: #FFFFFF;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+nav a:active{
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#pets{
+    font-weight: bold;
+}
+
+#recipe{
+    font-weight: bold;
+}
+
+#travel{
+    font-weight: bold;
+}
+
+#skip{
+    text-transform: uppercase;
+    position: absolute;
+    left: -400px;
+} 
+
+#skip:focus{
+    position: fixed;
+    left: 40.5%;
+    top: 5px;
+    z-index: 999;
+    padding: 3px;
+    border: solid black 2px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    text-decoration: underline;
+}  
+
+@media (prefers-reduced-motion:reduce) {
+    #gif{
+        display: none;
+    }
+
+    #static{
+        display: block;
+        margin: auto;
+    }   
+}
+
+@media screen and (min-width: 768px)
+
+/* Desktop code here */
+
+
+/* .style1{
+    -webkit-border-radius: 27;
+    -moz-border-radius: 27;
+    border-radius: 27px;
+    -webkit-box-shadow: 1px 1px 30px #00ff91;
+    -moz-box-shadow: 1px 1px 30px #00ff91;
+    box-shadow: 1px 1px 30px #00ff91;
+    font-family: Georgia;
+    color: #1e5c29;
+    font-size: 20px;
+    background: #24b332;
+    padding: 10px 10px 10px 10px;
+    border: dotted #00ff91 6px;
+    text-decoration: none;  
+    display: block;
+    margin: auto;
+}
+
+.style1:hover{
+    background: #e00b6f;
+    text-decoration: none;
+}*/
