@@ -8,7 +8,7 @@
     <title>Travel</title>
 </head>
 <body>
-    <a href="#main" id="skip">Skip to Main Content</a>
+    <a href="#main" id="mainskip">Skip to Main Content</a>
     <nav>
         <ul>
             <li><a href="index.html">Home/Pets</a></li>
@@ -19,8 +19,19 @@
     
     <main id="main">
     <h1>Travel</h1>
+
+    <h2 id="linktitle">Skip to your favorite places!</h2>
+
+    <div class="skip-links">
+        <a href="#yellowstone" id="skip">Yellowstone</a>
+        <a href="#sanfran" id="skip">San Francisco</a>
+        <a href="#rocks" id="skip">Pictured Rocks National Lakeshore</a>
+        <a href="#harbin" id="skip">Harbin</a>
+        <a href="#dragdrop" id="skip">GAME!</a>
+    </div>
+
     <div>
-        <h2>Yellowstone</h2>
+        <h2 id="yellowstone">Yellowstone</h2>
         
             <img class="intro-pic" id="gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
             <img class="intro-pic" id="static" src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
@@ -70,7 +81,7 @@
             <!-- Colleen Van Lent -->
     </div>
     <div>
-        <h2>San Francisco</h2>
+        <h2 id="sanfran">San Francisco</h2>
     
             <img class="intro-pic" id="gif" src="images/San_Francisco_bridge.gif" width="400" alt="Golden Gate Bridge at night">
             <img class="intro-pic" id="static" src="images/San_Francisco_bridge.jpeg" width = "400" alt="Golden Gate Bridge at night">
@@ -122,7 +133,7 @@
             <!-- Serena Hao -->
     </div>
     <div>
-        <h2>Pictured Rocks National Lakeshore</h2>
+        <h2 id="rocks">Pictured Rocks National Lakeshore</h2>
             
         <img class="intro-pic" id="gif" src="images/pictured_rocks.gif" width="400" alt="">
         <img class="intro-pic" id="static" src="images/pictured_rocks.jpeg" width="400" alt="">
@@ -179,7 +190,7 @@
         <!-- Ellie Irwin -->
     </div>
     <div>
-        <h2>Harbin</h2>
+        <h2 id="harbin">Harbin</h2>
             
             <img class="intro-pic" id="gif" src="images/Harbin_gif.gif" width="400" alt="">
             <img class="intro-pic" id="static" src="images/Harbin_city.jpg" width="400" alt="">
@@ -240,5 +251,44 @@
     </div>
     </main>
 
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+    <h3 id="gameheader">Did you pay attention?</h3>
+    <p id="instructions">Drag and drop the images of Harbin in the order of the ice sculpture festival, the night view,
+        and Saint Sophia's church. Careful! You can't put 
+        two images in one box (use the last box as a placeholder). Refresh the page to try again.</p>
+    
+    <div id="dragdrop">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="images/Saint_chapel.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="" height="">
+    </div>
+    
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/ice_sculptures_night.webp" draggable="true" ondragstart="drag(event)" id="drag2" width="" height="">
+    </div>
+    
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/Ice_sculpture_festival.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="" height="">
+    </div>
+    
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    </div>
+
+    <a href="#main" id="top">Back to Top</a>
 </body>
 </html>

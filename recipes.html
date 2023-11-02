@@ -8,7 +8,7 @@
     <title>Recipes</title>
 </head>
 <body>
-    <a href="#main" id="skip">Skip to Main Content</a>
+    <a href="#main" id="mainskip">Skip to Main Content</a>
     <nav>
         <ul>
             <li><a href="index.html">Home/Pets</a></li>
@@ -19,8 +19,18 @@
 
     <main id="main">
     <h1>Recipes</h1>
+
+    <h2 id="linktitle">Skip to your favorite recipes!</h2>
+
+    <div class="skip-links">
+        <a href="#cookies" id="skip">Double Chocolate Cookies</a>
+        <a href="#sushi" id="skip">Sushi Bake</a>
+        <a href="#pasta" id="skip">Tomato Basil Pasta</a>
+        <a href="#dragdrop" id="skip">GAME!</a>
+
+        </div>
     <div>
-        <h2>Double Chocolate Cookies</h2>
+        <h2 id="cookies">Double Chocolate Cookies</h2>
         <span>Origin: Michigan</span>
         <span>Source: Family Recipe</span>
         <span>Category: Dessert</span>
@@ -73,7 +83,7 @@
     </div>
 
     <div>
-        <h2>Sushi Bake</h2>
+        <h2 id="sushi">Sushi Bake</h2>
         <span>Origin: Asian </span>
         <span>Own recipe</span>
         <span>Category: Main dish</span>
@@ -126,9 +136,9 @@
         <!-- Ethan Tai and Joshua Vijayasegar -->
     </div>
     <div>
-        <h2>Tomato Basil Pasta</h2>
+        <h2 id="pasta">Tomato Basil Pasta</h2>
             <span>Origin: Italian</span>
-            <span>Source: https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce</span>
+            <span>Source: <a id="recipelink" href="https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce">https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce</a></span>
             <span>Category: Main Dish</span>
         
             <div class="intro-pic">
@@ -177,5 +187,42 @@
     </div>
     </main>
 
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+ <h3 id="gameheader">Did you pay attention?</h3>
+<p id="instructions">Drag and drop the images in the order in which they are used in the Sushi Bake. Careful! You can't put 
+    two images in one box (use the last box as a placeholder). Refresh the page to try again.</p>
+
+<div id="dragdrop">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="images/rice.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="" height="">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images/avocado.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="" height="">
+</div>
+
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/crab.jpeg" draggable="true" ondragstart="drag(event)" id="drag3" width="" height="">
+</div>
+
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+    <a href="#main" id="top">Back to Top</a>
 </body>
 </html>

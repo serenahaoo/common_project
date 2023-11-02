@@ -11,7 +11,7 @@
     <title>Pets</title>
 </head>
 <body>
-    <a href="#main" id = "skip">Skip to Main Content</a>
+    <a href="#main" id = "mainskip">Skip to Main Content</a>
     <nav>
         <ul>
             <li class="pets-link"><a id="pets" href="index.html">Home/Pets</a></li>
@@ -22,8 +22,23 @@
  
     <main id = "main"> 
         <h1>Pets</h1>
+        
+        <h2 id="linktitle">Skip to your favorite pets!</h2>
+
+        <div class="skip-links">
+        <a href="#terry" id="skip">Terry</a>
+        <a href="#rocky" id="skip">Rocky</a>
+        <a href="#bacon" id="skip">Bacon Q Dog</a>
+        <a href="#milktea" id="skip">Milktea</a>
+        <a href="#cheeto" id="skip">Cheeto(chicken)</a>
+        <a href="#jax" id="skip">Jax</a>
+        <a href="#terry" id="skip">Terry</a>
+        <a href="#luna" id="skip">Luna</a>
+        <a href="#dragdrop" id="skip">GAME!</a>
+        </div>
+
         <div>
-            <h2>Terry</h2>
+            <h2 id="terry">Terry</h2>
             <div class="intro-pic">
             <img src="images/terry.jpg" alt="Russian Turtle walking in grass" width="" height="">
             </div>
@@ -59,7 +74,7 @@
             </div>
 
         <div>
-            <h2>Rocky</h2>
+            <h2 id="rocky">Rocky</h2>
 
             <div class="intro-pic">
             <img src="images/rocky.jpg" alt="Black and grey cat laying on couch in sunlight" width="" height="">
@@ -95,7 +110,7 @@
         </div>
 
         <div> 
-            <h2>Bacon Q Dog</h2>
+            <h2 id="bacon">Bacon Q Dog</h2>
 
             <div class="intro-pic">
             <img src="images/bacon.jpg" width = "" alt="Brown labradoodle wearing colorful lei">
@@ -133,7 +148,7 @@
         </div>
 
         <div>
-            <h2>Milktea</h2>
+            <h2 id="milktea">Milktea</h2>
 
             <div class="intro-pic">
                 <img src="images/Milktea.jpg" width = "" alt="Brown labradoodle wearing colorful lei">
@@ -171,7 +186,7 @@
             <!--Olive Ren-->
         </div>
         <div>
-            <h2>Cheeto (Chicken)</h2>
+            <h2 id="cheeto">Cheeto (Chicken)</h2>
             
             <div class="intro-pic">
             <img width="" src="images/cheeto_cattree.jpg" alt="Orange cat hanging paws off a cat tower">
@@ -205,7 +220,7 @@
             <!-- Divya Shankar -->
         </div>
         <div>
-            <h2>Jax</h2>
+            <h2 id="jax">Jax</h2>
             <div class="intro-pic">
             <img width="" src="images/Jax.jpg" alt="A black and white kitten sitting down and wearing a yellow collar.">
             </div>
@@ -239,7 +254,7 @@
             <!-- Grace Jermstad -->
         </div>
         <div>
-            <h2>Luna</h2>
+            <h2 id="luna">Luna</h2>
 
             <div class="intro-pic">
             <img width="" src="images/luna.PNG" alt="Mini German shepherd sunbathing">
@@ -270,6 +285,45 @@
             <!-- Jahaira Flores -->
         </div>
     </main>
-    <button class="style1">Back to Top</button>
+
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+
+<h3 id="gameheader">Did you pay attention?</h3>
+<p id="instructions">Drag and drop the images in the order of Terry, Milktea, and Bacon Q Dog. Careful! You can't put 
+    two images in one box (use the last box as a placeholder). Refresh the page to try again.</p>
+
+<div id="dragdrop">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="images/bacon.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="" height="">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images/Milktea.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="" height="">
+</div>
+
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/terry.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="" height="">
+</div>
+
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>
+
+    <a href="#main" id="top">Back to Top</a>
 </body>
 </html>
