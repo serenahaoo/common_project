@@ -131,7 +131,6 @@ figcaption{
 nav li{
     display: inline-block;
     font-family: 'Trebuchet MS', sans-serif;
-
 }
 
 .likes-list li{
@@ -193,9 +192,9 @@ nav{
 nav a{
     background-color: #FFFFFF;
     padding: 5px;
-    margin: 20px;
+    margin: 8px;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: 2px 2px 5px #000000;
 }
 
@@ -392,6 +391,11 @@ nav a:hover{
     box-shadow: 7px 7px 10px #baffc9;
     margin: 15px;
   }
+
+  nav a{
+    font-size: 20px;
+    margin: 30px;
+}
 
 }
 
