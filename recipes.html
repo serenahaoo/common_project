@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Recipes</title>
 </head>
 <body>
@@ -14,13 +16,14 @@
             <li><a href="index.html">Home/Pets</a></li>
             <li><a id="recipe" href="recipes.html">Recipes</a></li>
             <li><a href="travel.html">Travel</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main id="main">
     <h1>Recipes</h1>
 
-    <h2 id="linktitle">Skip to your favorite recipes!</h2>
+    <h2 id="linktitle">Skip to your favorite recipes<i class="material-icons">arrow_forward</i></h2>
 
     <div class="skip-links">
         <a href="#cookies" id="skip">Double Chocolate Cookies</a>
@@ -30,12 +33,16 @@
 
         </div>
     <div>
+
         <h2 id="cookies">Double Chocolate Cookies</h2>
+        <div class="desktop-intro-recipes">
+        <div class="recipe-specs">
         <span>Origin: Michigan</span>
         <span>Source: Family Recipe</span>
         <span>Category: Dessert</span>
+        </div>
 
-        <div class="intro-pic">
+        <div class="intro-pic" id="recipe-pic">
         <img src="images/double_chocolate_cookies.png" width = "" alt="">
         </div>
 
@@ -44,7 +51,11 @@
             recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to 
             balance it.  Note, these cookies are best eaten very quickly.</p>
         </div>
-        <h3>Recipe Ingredients</h3>
+        </div>
+
+        <div class="recipe-lists">
+        <div class="recipe-ingredients">
+        <h3 >Recipe Ingredients</h3>
         <ul class="ingredients">
             <li>Unsalted butter</li>
             <li>Granulated Sugar</li>
@@ -58,7 +69,9 @@
             <li>Salt</li>
             <li>Semi-sweet chocolate chunks</li>
         </ul>
+        </div>
 
+        <div class="recipe-steps">
         <h3>Recipe Steps</h3> 
         <ol class="steps">
             <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
@@ -70,6 +83,8 @@
             <li>Form 15 cookies and place on a baking sheet.</li>
             <li>Cook for 12 to 13 minutes at 350 degrees.</li>
         </ol>
+        </div>
+        </div>
 
         <h3>Additional Food images</h3>
 
@@ -84,11 +99,15 @@
 
     <div>
         <h2 id="sushi">Sushi Bake</h2>
+
+        <div class="desktop-intro-recipes">
+        <div class="recipe-specs">
         <span>Origin: Asian </span>
         <span>Own recipe</span>
         <span>Category: Main dish</span>
+        </div>
 
-        <div class="intro-pic">
+        <div class="intro-pic" id="recipe-pic">
         <img src="images/sushiBake.jpeg" width = "" alt="">
         </div>
 
@@ -97,6 +116,10 @@
             make our sushi bake, which takes 10 minutes to assemble and 20 minutes to bake in the oven. 
             Our recipe feeds 8 people.</p>
         </div>
+        </div>
+
+        <div class="recipe-lists">
+        <div class="recipe-ingredients">
         <h3>Ingredients: </h3>
         <ul class="ingredients">
             <li>1 avocado</li>
@@ -109,8 +132,9 @@
             <li>1 cucumber</li>
             <li>3 tablespoons of sriracha</li>
         </ul>
-        
+        </div>
 
+        <div class="recipe-steps">
         <h3>Steps: </h3>    
         <ol class="steps">
             <li>Preheat oven to 350 degrees </li>
@@ -124,6 +148,8 @@
             <li>Bake for 20 minutes</li>
             <li>Enjoy!</li>
         </ol>
+        </div>
+        </div>
 
         <h3>Additional photos of recipe</h3>
 
@@ -137,11 +163,15 @@
     </div>
     <div>
         <h2 id="pasta">Tomato Basil Pasta</h2>
+
+            <div class="desktop-intro-recipes">
+            <div class="recipe-specs">
             <span>Origin: Italian</span>
             <span>Source: <a id="recipelink" href="https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce">https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce</a></span>
             <span>Category: Main Dish</span>
+            </div>
         
-            <div class="intro-pic">
+            <div class="intro-pic" id="recipe-pic">
             <img src="images/basically-no-cook-tomato-sauce.jpg" width="" alt="">
             </div>
 
@@ -151,6 +181,10 @@
             Appetit’s website. PS avoid using the shaker parmesan – I used that the first time I made this and it drew down the
             quality of the dish.</p>
             </div>
+            </div>
+
+            <div class="recipe-lists">
+            <div class="recipe-ingredients">
             <h3>Recipe Ingredients</h3>
             <ul class="ingredients">
                 <li>Pasta</li>
@@ -161,7 +195,9 @@
                 <li>crushed red pepper</li>
                 <li>finely grated block of parmesan</li>
             </ul>
+            </div>
         
+            <div class="recipe-steps">
             <h3>Recipe Steps</h3>
             <ol class="steps">
                 <li>cut tomatoes along equator</li>
@@ -174,6 +210,8 @@
                 <li>cook pasta</li>
                 <li>toss marinade with cooked pasta and serve topped with remaining parmesan</li>
             </ol>
+            </div>
+            </div>
         
             <h3>Additional Food images</h3>
 
@@ -209,15 +247,15 @@
 
 <div id="dragdrop">
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="images/rice.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="" height="">
+  <img src="images/rice.jpeg" alt="Sticky rice for sushi" draggable="true" ondragstart="drag(event)" id="drag1" width="" height="">
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-<img src="images/avocado.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="" height="">
+<img src="images/avocado.jpeg" alt="Avocado sliced in half" draggable="true" ondragstart="drag(event)" id="drag2" width="" height="">
 </div>
 
 <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img src="images/crab.jpeg" draggable="true" ondragstart="drag(event)" id="drag3" width="" height="">
+    <img src="images/crab.jpeg" alt="Fake crab for sushi" draggable="true" ondragstart="drag(event)" id="drag3" width="" height="">
 </div>
 
 <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
