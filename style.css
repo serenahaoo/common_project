@@ -304,6 +304,11 @@ nav a:hover{
     color: #3d3d3d;
 }
 
+.contact label{
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
 .contact input:hover{
     background-color: #eecbff;
 }
