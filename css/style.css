@@ -221,6 +221,11 @@ nav a:hover{
     box-shadow: -2px -2px 2px #000000;
 }
 
+#contact{
+    font-weight: bold;
+    box-shadow: -2px -2px 2px #000000;
+}
+
 #mainskip{
     text-transform: uppercase;
     position: absolute;
@@ -258,7 +263,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-#skip {
+.skip {
     display: none;
 }
 
@@ -297,6 +302,11 @@ nav a:hover{
     padding: 4px;
     border-radius: 3px;
     color: #3d3d3d;
+}
+
+.contact label{
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .contact input:hover{
@@ -374,10 +384,10 @@ nav a:hover{
     align-items: center;
 }
 
-#skip {
+.skip {
     display: block;
     color: #AA336A;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     padding: 15px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -486,11 +496,11 @@ img:hover, .pets-gallery:hover, .food-gallery:hover,
     color: #000000;
 }
 
-#skip, #top{
+.skip, #top{
     text-decoration: none;
 }
 
-#skip:hover, #top:hover{
+.skip:hover, #top:hover{
     text-decoration: underline;
 }
 
