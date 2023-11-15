@@ -263,7 +263,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-#skip {
+.skip {
     display: none;
 }
 
@@ -379,10 +379,10 @@ nav a:hover{
     align-items: center;
 }
 
-#skip {
+.skip {
     display: block;
     color: #AA336A;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     padding: 15px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -491,7 +491,7 @@ img:hover, .pets-gallery:hover, .food-gallery:hover,
     color: #000000;
 }
 
-#skip, #top{
+.skip, #top{
     text-decoration: none;
 }
 
